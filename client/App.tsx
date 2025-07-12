@@ -12,6 +12,7 @@ import { UploadMapping } from "./pages/UploadMapping";
 import { SourceConfig } from "./pages/SourceConfig";
 import { TargetConfig } from "./pages/TargetConfig";
 import { SelectTables } from "./pages/SelectTables";
+import { Validations } from "./pages/Validations";
 import { Results } from "./pages/Results";
 import NotFound from "./pages/NotFound";
 
@@ -49,10 +50,7 @@ const App = () => (
             <Route path="/source-config" element={<SourceConfig />} />
             <Route path="/target-config" element={<TargetConfig />} />
             <Route path="/select-tables" element={<SelectTables />} />
-            <Route
-              path="/validations"
-              element={<PlaceholderPage title="Validation Rules" />}
-            />
+            <Route path="/validations" element={<Validations />} />
             <Route
               path="/run-validation"
               element={<PlaceholderPage title="Run Validation" />}
