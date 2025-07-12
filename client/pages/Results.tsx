@@ -245,7 +245,7 @@ export function Results() {
       </div>
 
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Tables</CardTitle>
@@ -321,9 +321,9 @@ export function Results() {
 
           {/* Filters */}
           <div className="flex items-center space-x-2">
-            <Filter className="h-4 w-4 text-muted-foreground" />
+            <Filter className="h-4 w-4 text-muted-foreground hidden sm:block" />
             <Select value={selectedTable} onValueChange={setSelectedTable}>
-              <SelectTrigger className="w-40">
+              <SelectTrigger className="w-32 lg:w-40">
                 <SelectValue placeholder="All tables" />
               </SelectTrigger>
               <SelectContent>
@@ -337,7 +337,7 @@ export function Results() {
             </Select>
 
             <Select value={selectedStatus} onValueChange={setSelectedStatus}>
-              <SelectTrigger className="w-32">
+              <SelectTrigger className="w-28 lg:w-32">
                 <SelectValue placeholder="All status" />
               </SelectTrigger>
               <SelectContent>
@@ -499,7 +499,7 @@ export function Results() {
               <CardTitle>Download Validation Report</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="border rounded-lg p-4 space-y-3">
                   <div className="flex items-center space-x-2">
                     <FileText className="h-5 w-5 text-primary" />
