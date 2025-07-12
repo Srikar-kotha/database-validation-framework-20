@@ -11,6 +11,7 @@ import { Overview } from "./pages/Overview";
 import { UploadMapping } from "./pages/UploadMapping";
 import { SourceConfig } from "./pages/SourceConfig";
 import { TargetConfig } from "./pages/TargetConfig";
+import { SelectTables } from "./pages/SelectTables";
 import { Results } from "./pages/Results";
 import NotFound from "./pages/NotFound";
 
@@ -47,10 +48,7 @@ const App = () => (
             <Route path="/upload-mapping" element={<UploadMapping />} />
             <Route path="/source-config" element={<SourceConfig />} />
             <Route path="/target-config" element={<TargetConfig />} />
-            <Route
-              path="/select-tables"
-              element={<PlaceholderPage title="Select Tables & Fields" />}
-            />
+            <Route path="/select-tables" element={<SelectTables />} />
             <Route
               path="/validations"
               element={<PlaceholderPage title="Validation Rules" />}
