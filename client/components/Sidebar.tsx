@@ -111,7 +111,7 @@ export function Sidebar() {
               />
               <div className="flex-1">
                 <div className="text-sm font-medium">{item.name}</div>
-                <div className="text-xs text-sidebar-foreground/60">
+                <div className="text-xs text-sidebar-foreground/60 hidden lg:block">
                   {item.description}
                 </div>
               </div>
@@ -129,7 +129,7 @@ export function Sidebar() {
           <Settings className="mr-3 h-5 w-5 flex-shrink-0 text-sidebar-foreground/70" />
           <div className="flex-1">
             <div className="text-sm font-medium">Settings</div>
-            <div className="text-xs text-sidebar-foreground/60">
+            <div className="text-xs text-sidebar-foreground/60 hidden lg:block">
               App configuration
             </div>
           </div>
