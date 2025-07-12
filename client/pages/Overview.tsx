@@ -28,17 +28,17 @@ export function Overview() {
       </div>
 
       {/* Quick Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
+            <CardTitle className="text-xs lg:text-sm font-medium">
               Total Validations
             </CardTitle>
             <Database className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">247</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-xl lg:text-2xl font-bold">247</div>
+            <p className="text-xs text-muted-foreground hidden sm:block">
               <span className="text-success">+12</span> from last month
             </p>
           </CardContent>
@@ -87,7 +87,7 @@ export function Overview() {
       </div>
 
       {/* Current Validation Process */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -221,7 +221,7 @@ export function Overview() {
           <CardTitle>Quick Actions</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link to="/upload-mapping">
               <Button variant="outline" className="h-24 flex-col space-y-2">
                 <FileText className="h-6 w-6" />
