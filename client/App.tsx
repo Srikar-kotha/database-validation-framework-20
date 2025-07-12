@@ -10,6 +10,7 @@ import { Layout } from "./components/Layout";
 import { Overview } from "./pages/Overview";
 import { UploadMapping } from "./pages/UploadMapping";
 import { SourceConfig } from "./pages/SourceConfig";
+import { Results } from "./pages/Results";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -60,10 +61,7 @@ const App = () => (
               path="/run-validation"
               element={<PlaceholderPage title="Run Validation" />}
             />
-            <Route
-              path="/results"
-              element={<PlaceholderPage title="Validation Results" />}
-            />
+            <Route path="/results" element={<Results />} />
             <Route
               path="/settings"
               element={<PlaceholderPage title="Settings" />}
