@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Overview } from "./pages/Overview";
 import { UploadMapping } from "./pages/UploadMapping";
+import { SourceConfig } from "./pages/SourceConfig";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,10 +43,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Overview />} />
             <Route path="/upload-mapping" element={<UploadMapping />} />
-            <Route
-              path="/source-config"
-              element={<PlaceholderPage title="Source Configuration" />}
-            />
+            <Route path="/source-config" element={<SourceConfig />} />
             <Route
               path="/target-config"
               element={<PlaceholderPage title="Target Configuration" />}
