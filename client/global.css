@@ -9,95 +9,95 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 248 250 252;
-    --foreground: 15 23 42;
+    --background: 250 251 252;
+    --foreground: 30 41 59;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 30 41 59;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 30 41 59;
 
-    --primary: 37 99 235;
-    --primary-foreground: 248 250 252;
+    --primary: 79 70 229;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 241 245 249;
-    --secondary-foreground: 15 23 42;
+    --secondary: 248 250 252;
+    --secondary-foreground: 30 41 59;
 
-    --muted: 241 245 249;
+    --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
-    --accent: 59 130 246;
-    --accent-foreground: 248 250 252;
+    --accent: 16 185 129;
+    --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
+    --destructive-foreground: 255 255 255;
 
-    --success: 34 197 94;
-    --success-foreground: 248 250 252;
+    --success: 16 185 129;
+    --success-foreground: 255 255 255;
 
     --warning: 245 158 11;
-    --warning-foreground: 248 250 252;
+    --warning-foreground: 255 255 255;
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 37 99 235;
+    --ring: 79 70 229;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 30 41 59;
-    --sidebar-foreground: 226 232 240;
-    --sidebar-primary: 37 99 235;
-    --sidebar-primary-foreground: 248 250 252;
-    --sidebar-accent: 51 65 85;
-    --sidebar-accent-foreground: 226 232 240;
-    --sidebar-border: 51 65 85;
-    --sidebar-ring: 59 130 246;
+    --sidebar-background: 15 23 42;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 79 70 229;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 30 41 59;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 30 41 59;
+    --sidebar-ring: 16 185 129;
   }
 
   .dark {
-    --background: 2 6 23;
-    --foreground: 248 250 252;
+    --background: 9 9 11;
+    --foreground: 250 250 250;
 
-    --card: 15 23 42;
-    --card-foreground: 248 250 252;
+    --card: 24 24 27;
+    --card-foreground: 250 250 250;
 
-    --popover: 15 23 42;
-    --popover-foreground: 248 250 252;
+    --popover: 24 24 27;
+    --popover-foreground: 250 250 250;
 
-    --primary: 59 130 246;
-    --primary-foreground: 15 23 42;
+    --primary: 139 92 246;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 30 41 59;
-    --secondary-foreground: 248 250 252;
+    --secondary: 39 39 42;
+    --secondary-foreground: 250 250 250;
 
-    --muted: 30 41 59;
-    --muted-foreground: 148 163 184;
+    --muted: 39 39 42;
+    --muted-foreground: 161 161 170;
 
-    --accent: 37 99 235;
-    --accent-foreground: 248 250 252;
+    --accent: 34 197 94;
+    --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
+    --destructive-foreground: 255 255 255;
 
     --success: 34 197 94;
-    --success-foreground: 248 250 252;
+    --success-foreground: 255 255 255;
 
     --warning: 245 158 11;
-    --warning-foreground: 248 250 252;
+    --warning-foreground: 255 255 255;
 
-    --border: 51 65 85;
-    --input: 51 65 85;
-    --ring: 59 130 246;
+    --border: 39 39 42;
+    --input: 39 39 42;
+    --ring: 139 92 246;
 
-    --sidebar-background: 2 6 23;
-    --sidebar-foreground: 226 232 240;
-    --sidebar-primary: 59 130 246;
-    --sidebar-primary-foreground: 15 23 42;
-    --sidebar-accent: 30 41 59;
-    --sidebar-accent-foreground: 226 232 240;
-    --sidebar-border: 30 41 59;
-    --sidebar-ring: 37 99 235;
+    --sidebar-background: 9 9 11;
+    --sidebar-foreground: 250 250 250;
+    --sidebar-primary: 139 92 246;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 24 24 27;
+    --sidebar-accent-foreground: 250 250 250;
+    --sidebar-border: 24 24 27;
+    --sidebar-ring: 34 197 94;
   }
 }
 
