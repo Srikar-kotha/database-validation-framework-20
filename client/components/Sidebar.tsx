@@ -65,7 +65,11 @@ const navigation = [
   },
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  onClose?: () => void;
+}
+
+export function Sidebar({ onClose }: SidebarProps) {
   const location = useLocation();
 
   return (
