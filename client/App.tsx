@@ -15,6 +15,7 @@ import { SelectTables } from "./pages/SelectTables";
 import { Validations } from "./pages/Validations";
 import { RunValidation } from "./pages/RunValidation";
 import { Results } from "./pages/Results";
+import { Settings } from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -54,10 +55,7 @@ const App = () => (
             <Route path="/validations" element={<Validations />} />
             <Route path="/run-validation" element={<RunValidation />} />
             <Route path="/results" element={<Results />} />
-            <Route
-              path="/settings"
-              element={<PlaceholderPage title="Settings" />}
-            />
+            <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
