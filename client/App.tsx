@@ -13,6 +13,7 @@ import { SourceConfig } from "./pages/SourceConfig";
 import { TargetConfig } from "./pages/TargetConfig";
 import { SelectTables } from "./pages/SelectTables";
 import { Validations } from "./pages/Validations";
+import { RunValidation } from "./pages/RunValidation";
 import { Results } from "./pages/Results";
 import NotFound from "./pages/NotFound";
 
@@ -51,10 +52,7 @@ const App = () => (
             <Route path="/target-config" element={<TargetConfig />} />
             <Route path="/select-tables" element={<SelectTables />} />
             <Route path="/validations" element={<Validations />} />
-            <Route
-              path="/run-validation"
-              element={<PlaceholderPage title="Run Validation" />}
-            />
+            <Route path="/run-validation" element={<RunValidation />} />
             <Route path="/results" element={<Results />} />
             <Route
               path="/settings"
