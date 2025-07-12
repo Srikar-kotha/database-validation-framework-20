@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Overview } from "./pages/Overview";
+import { UploadMapping } from "./pages/UploadMapping";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,10 +41,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Overview />} />
-            <Route
-              path="/upload-mapping"
-              element={<PlaceholderPage title="Upload Mapping" />}
-            />
+            <Route path="/upload-mapping" element={<UploadMapping />} />
             <Route
               path="/source-config"
               element={<PlaceholderPage title="Source Configuration" />}
