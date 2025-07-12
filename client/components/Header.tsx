@@ -18,10 +18,15 @@ import {
   Settings,
   HelpCircle,
   Activity,
+  Menu,
 } from "lucide-react";
 import { useState } from "react";
 
-export function Header() {
+interface HeaderProps {
+  onMenuClick?: () => void;
+}
+
+export function Header({ onMenuClick }: HeaderProps) {
   const [isDark, setIsDark] = useState(false);
 
   const toggleTheme = () => {
@@ -31,9 +36,20 @@ export function Header() {
 
   return (
     <header className="h-16 bg-card border-b border-border px-6 flex items-center justify-between">
-      {/* Left side - Breadcrumb or current step */}
+      {/* Left side - Mobile menu and breadcrumb */}
       <div className="flex items-center space-x-4">
-        <div className="flex items-center space-x-2">
+        {/* Mobile menu button */}
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-9 w-9 p-0 lg:hidden"
+          onClick={onMenuClick}
+        >
+          <Menu className="h-4 w-4" />
+        </Button>
+
+        {/* Breadcrumb - hidden on small screens */}
+        <div className="hidden sm:flex items-center space-x-2">
           <Activity className="h-5 w-5 text-muted-foreground" />
           <span className="text-sm text-muted-foreground">Current Step:</span>
           <Badge variant="secondary" className="font-medium">
